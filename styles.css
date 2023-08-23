@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calendar {
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .days div {
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  #monthYear {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* ... existing styles ... */
+
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 100px;
+  }
+  
+  .days div {
+    position: relative;
+    padding: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .days div:hover .tooltip {
+    display: block;
+  }
+  
